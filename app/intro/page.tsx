@@ -50,7 +50,7 @@ export default function Home() {
                     <strong>絶対に誰にも見られないように管理しましょう。勝手に課金され放題になってしまいます。</strong>
                   </li>
                   <li className="mt-2">
-                    ホームディレクトリ直下に「workspace」など、任意の名前の専用フォルダを作っておくと、既存のファイルと混ざらずに管理しやすくなります。
+                    ホームディレクトリ直下に&quot;workspace&quot;など、任意の名前の専用フォルダを作っておくと、既存のファイルと混ざらずに管理しやすくなります。
                     ここでは、以下のようなフォルダを作成しておきます。
                     <pre className="bg-gray-100 rounded p-2 mt-2">
                       ~/workspace
@@ -71,7 +71,7 @@ export default function Home() {
                     <pre className="bg-gray-100 rounded p-2">
                       cd ~/workspace
                     </pre>
-                    <code>cd</code>とは「チェンジディレクトリ」の略で、ターミナルが指定したパスに移動してくれます。
+                    <code>cd</code>とは&quot;チェンジディレクトリ&quot;の略で、ターミナルが指定したパスに移動してくれます。
                     つまり移動先の中でターミナルが動くよ、ということです。
                   </li>
                   <li>
@@ -102,7 +102,7 @@ export default function Home() {
                     <pre className="bg-gray-100 rounded p-2 mt-2">
                       ~/workspace/.venv/lib/python3.x/site-packages/zoltraak/grimoires
                     </pre>
-                    この中身は、このREADME下部の「魔導書構成」で示されていますのでそちらを参照のこと。
+                    この中身は、このREADME下部の&quot;魔導書構成&quot;で示されていますのでそちらを参照のこと。
                   </li>
                   <li>
                     <p className="mt-4 mb-2"><code>.env</code>ファイルの作成</p>
@@ -110,7 +110,7 @@ export default function Home() {
                       ファインダーを開いて、<code>~/workspace/.venv/lib/python3.x/site-packages/zoltraak</code>を開きます。
                     </p>
                     <p className="mb-2">
-                      ここに「右クリック&gt;&gt;新規作成&gt;&gt;テキストドキュメント」から、テキストファイルを作成します。
+                      ここに&quot;右クリック&gt;&gt;新規作成&gt;&gt;テキストドキュメント&quot;から、テキストファイルを作成します。
                       =&gt;作成したら、ファイル名を<code>.env</code>に変更します。
                       それから、ファイルを開いて、1行目に以下のように入力して保存します。
                     </p>
@@ -124,10 +124,10 @@ export default function Home() {
                   <li>
                     <p className="mt-4 mb-2">詠唱</p>
                     <p className="mb-2">
-                      以上で準備は整いました。以下のように、<code>zoltraak</code>コマンドに続けて"プロンプト"と起動式（プロンプトコンパイラ）を指定します。
+                      以上で準備は整いました。以下のように、<code>zoltraak</code>コマンドに続けて&quot;プロンプト&quot;と起動式（プロンプトコンパイラ）を指定します。
                     </p>
                     <pre className="bg-gray-100 rounded p-2">
-                      zoltraak "プロンプト内容" -c コンパイラ名
+                      zoltraak &quot;プロンプト内容&quot; -c コンパイラ名
                     </pre>
                     <p className="mt-2">
                       コンパイラ名、プロンプト内容の例については、次項以降にて示します。
@@ -171,7 +171,7 @@ export default function Home() {
                     <strong>絶対に誰にも見られないように管理しましょう。勝手に課金され放題になってしまいます。</strong>
                   </li>
                   <li className="mt-2">
-                    ユーザ配下に「workspace」など、任意の名前の専用フォルダを作っておくと、既存のファイルと混ざらずに管理しやすくなります。
+                    ユーザ配下に&quot;workspace&quot;など、任意の名前の専用フォルダを作っておくと、既存のファイルと混ざらずに管理しやすくなります。
                     ここでは、以下のようなフォルダを作成しておきます。
                     <pre className="bg-gray-100 rounded p-2 mt-2">
                       C:/Users/ユーザ名/workspace
@@ -194,7 +194,7 @@ export default function Home() {
                       cd C:/Users/ユーザ名/workspace
                     </pre>
                     <p>
-                      <code>cd</code>とは「チェンジディレクトリ」の略で、ターミナルが指定したパスに移動してくれます。
+                      <code>cd</code>とは&quot;チェンジディレクトリ&quot;の略で、ターミナルが指定したパスに移動してくれます。
                       つまり移動先の中でターミナルが動くよ、ということです。
                     </p>
                   </li>
