@@ -115,7 +115,7 @@ export default function Home() {
                       それから、ファイルを開いて、1行目に以下のように入力して保存します。
                     </p>
                     <pre className="bg-gray-100 rounded p-2">
-                      ANTHROPIC_API_KEY=&quot;ここにAnthropicから取得したキー&quot;
+                      ANTHROPIC_API_KEY=ここにAnthropicから取得したキー
                     </pre>
                     <p className="mt-2">
                       ※本当はコマンドでも作成できますが、文字コードというのを合わせるなどが必要なので、現状は非エンジニアは手動で作成したほうが簡単のようです。
@@ -127,7 +127,7 @@ export default function Home() {
                       以上で準備は整いました。以下のように、<code>zoltraak</code>コマンドに続けて"プロンプト"と起動式（プロンプトコンパイラ）を指定します。
                     </p>
                     <pre className="bg-gray-100 rounded p-2">
-                      zoltraak &quot;プロンプト内容&quot; -c コンパイラ名
+                      zoltraak "プロンプト内容" -c コンパイラ名
                     </pre>
                     <p className="mt-2">
                       コンパイラ名、プロンプト内容の例については、次項以降にて示します。
@@ -174,7 +174,7 @@ export default function Home() {
                     ユーザ配下に「workspace」など、任意の名前の専用フォルダを作っておくと、既存のファイルと混ざらずに管理しやすくなります。
                     ここでは、以下のようなフォルダを作成しておきます。
                     <pre className="bg-gray-100 rounded p-2 mt-2">
-                      C:/Users/&#123;"ユーザ名"&#125;/workspace
+                      C:/Users/ユーザ名/workspace
                     </pre>
                     自分で別の名前を命名した場合、以下においては<code>workspace</code>を自分のつけた名前で読み替えてください。
                   </li>
@@ -191,7 +191,7 @@ export default function Home() {
                   <li>
                     <p className="mb-2">ワークスペースへ移動</p>
                     <pre className="bg-gray-100 rounded p-2">
-                      cd C:/Users/&#123;"ユーザ名"&#125;/workspace
+                      cd C:/Users/ユーザ名/workspace
                     </pre>
                     <p>
                       <code>cd</code>とは「チェンジディレクトリ」の略で、ターミナルが指定したパスに移動してくれます。
@@ -230,14 +230,14 @@ export default function Home() {
                       特に、魔導書の根幹となるファイルたちは、以下のパスに保存されています。
                     </p>
                     <pre className="bg-gray-100 rounded p-2 mt-2">
-                      C:\Users\{"{"}&#123;ユーザ名&#125;{"}"}\workspace\.venv\Lib\site-packages\zoltraak\grimoires
+                      C:\Users\ユーザ名\workspace\.venv\Lib\site-packages\zoltraak\grimoires
                     </pre>
                     <p>この中身は、このREADME下部の「魔導書構成」で示されていますのでそちらを参照のこと。</p>
                   </li>
                   <li>
                     <p className="mt-4 mb-2"><code>.env</code>ファイルの作成</p>
                     <p className="mb-2">
-                      エクスプローラ（黄色いフォルダのやつ）を開いて、<code>C:/Users/{"{ユーザ名}"}/workspace/.venv/Lib/site-packages/zoltraak</code>を開きます。
+                      エクスプローラ（黄色いフォルダのやつ）を開いて、<code>C:/Users/ユーザ名/workspace/.venv/Lib/site-packages/zoltraak</code>を開きます。
                     </p>
                     <p className="mb-2">
                       ここに「右クリック&gt;&gt;新規作成&gt;&gt;テキストドキュメント」から、テキストファイルを作成します。
@@ -252,4 +252,3 @@ export default function Home() {
     </main>
   );
 }
-
