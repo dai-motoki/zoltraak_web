@@ -4,7 +4,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: '/public/zoltraakhp.png',
+        url: '/zoltraakhp.png',
       },
     ],
   },
