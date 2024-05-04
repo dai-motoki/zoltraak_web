@@ -1,9 +1,53 @@
+'use client'; 
+import { useState, useEffect } from 'react';
+
 export default function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); // isMobileの初期値を設定
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // 768pxよりも小さい画面幅をモバイルと判断
+    };
+
+    handleResize(); // 初期化時に実行
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="fixed top-0 left-0 h-screen w-64 bg-gradient-to-b from-gray-900/80 to-black/60 text-white backdrop-blur-sm">
-      <div className="p-4">
-        <h2 className="text-xl font-bold mb-4">創造魔法 Zoltraak</h2>
-        <nav>
+    <div>
+      {/* ハンバーガーメニューボタン */}
+      <button
+        className="fixed top-4 left-4 z-50 block lg:hidden"
+        onClick={toggleSidebar}
+      >
+        <svg
+          className="h-6 w-6 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+
+      {/* サイドバー */}
+      <div
+        className={`fixed inset-y-0 left-0 z-40 h-screen w-64 max-w-full bg-gradient-to-b from-gray-900/80 to-black/60 text-white backdrop-blur-sm transition-transform duration-300 ease-in-out ${
+          isOpen ? 'translate-x-0' : '-translate-x-full'
+        } ${isMobile ? '' : 'translate-x-0'}`}
+      >
+        <div className="p-4" style={{ marginTop: '50px' }}>
+        <h2 className="text-xl font-bold mb-4">
+        <a href="/" className="text-white hover:text-gray-300">創造魔法 Zoltraak</a>
+      </h2>
+
+          <nav>
           <ul>
             <li className="my-2 hover:bg-white/10">
               <a href="/intro" className="flex items-center p-2">
@@ -78,7 +122,8 @@ export default function Sidebar() {
               </a>
             </li>
           </ul>
-        </nav>
+          </nav>
+        </div>
       </div>
     </div>
   );
